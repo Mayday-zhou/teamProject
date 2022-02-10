@@ -11,9 +11,9 @@ public class DBPool {
     static {
         dataSource =new DruidDataSource();
         ((DruidDataSource)dataSource).setDriverClassName("com.mysql.jdbc.Driver");
-        ((DruidDataSource) dataSource) .setUrl("jdbc:mysql://localhost:3306/purcharse?useUnicode=true&characterEncoding=UTF-8&useSSL=false");
+        ((DruidDataSource) dataSource) .setUrl("jdbc:mysql://localhost:3306/goods?useUnicode=true&characterEncoding=UTF-8&useSSL=false");
         ((DruidDataSource)dataSource).setUsername("root");
-        ((DruidDataSource)dataSource).setPassword("123456");
+        ((DruidDataSource)dataSource).setPassword("root");
         ((DruidDataSource)dataSource).setMinIdle(5);
         ((DruidDataSource)dataSource).setMaxActive(10);
     }
